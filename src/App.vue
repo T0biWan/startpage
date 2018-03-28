@@ -2,7 +2,7 @@
 <div id="app">
   <section class="section">
     <div class="container logo-container">
-      <img class="logo-container__image" src="./assets/wave-logo-color.png">
+      <img class="logo-container__image" src="./assets/logo/wave-logo-color.png">
     </div>
   </section>
 
