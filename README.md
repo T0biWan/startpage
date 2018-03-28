@@ -1,2 +1,2 @@
 # startpage
-Custom browser startpages
+Custom browser startpage
