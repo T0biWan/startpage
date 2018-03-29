@@ -12,8 +12,8 @@
             <option>duckduckgo</option>
             <option>dict.cc</option>
             <option>google images</option>
-            <option>Wikipedia.de</option>
-            <option>Wikipedia.com</option>
+            <option>wikipedia.de</option>
+            <option>wikipedia.com</option>
             <option>Metal Archive</option>
           </select>
         </span>
@@ -26,6 +26,32 @@
       </div>
       <div class="control">
         <a class="button is-info"><i class="fas fa-search"></i></a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -51,7 +77,4 @@
 </script>
 
 <style lang="scss">
-.logo-container {
-  width: 250px
-}
 </style>
