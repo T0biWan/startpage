@@ -1,8 +1,8 @@
 <template>
   <section class="section">
-    <div class="container logo-container">
-      <img class="logo-container__image" src="../assets/logo/wave-logo-transparent.png">
-    </div>
+    <figure class="container image is-128x128">
+      <img src="../assets/logo/wave-logo-transparent.png">
+    </figure>
   </section>
 </template>
 
