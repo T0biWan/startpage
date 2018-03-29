@@ -1,5 +1,18 @@
 <template>
 <div id="app">
+  <section class="hero is-info">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Only for Production
+        </h1>
+        <h2 class="subtitle">
+          Selected Search Engine: {{selected_search_engine}}
+        </h2>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container logo-container">
       <img class="logo-container__image" src="./assets/logo/wave-logo-color.png">
@@ -11,7 +24,7 @@
       <div class="control has-icons-left">
 
         <span class="select">
-          <select>
+          <select v-model="selected_search_engine">
             <option>google</option>
             <option>duckduckgo</option>
             <option>dict.cc</option>
@@ -34,7 +47,6 @@
       </div>
     </div>
   </section>
-
 </div>
 </template>
 
@@ -42,12 +54,12 @@
 export default {
   name: 'app',
   data() {
-    return {}
+    return {selected_search_engine: 'google'}
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 .logo-container {
   width: 250px
 }
