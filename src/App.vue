@@ -3,26 +3,17 @@
   <section class="hero is-info">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
-          Only for Production
-        </h1>
-        <h2 class="subtitle">
-          Selected Search Engine: {{selected_search_engine}}
-        </h2>
+        <h1 class="title">Only for Production</h1>
+        <h2 class="subtitle">Selected Search Engine: {{selected_search_engine}}</h2>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container logo-container">
-      <img class="logo-container__image" src="./assets/logo/wave-logo-color.png">
-    </div>
-  </section>
+  <logo></logo>
 
   <section class="section">
     <div class="field has-addons">
       <div class="control has-icons-left">
-
         <span class="select">
           <select v-model="selected_search_engine">
             <option>google</option>
@@ -34,7 +25,6 @@
             <option>Metal Archive</option>
           </select>
         </span>
-
         <span class="icon is-small is-left">
           <i class="fab fa-searchengin"></i>
         </span>
@@ -51,12 +41,19 @@
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data() {
-    return {selected_search_engine: 'google'}
+  import logo from "./components/logo.vue"
+
+  export default {
+    name: 'app',
+
+    components: {
+      logo
+    },
+
+    data() {
+      return {selected_search_engine: 'google'}
+    }
   }
-}
 </script>
 
 <style lang="scss">
