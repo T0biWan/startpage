@@ -1,14 +1,6 @@
 <template>
 <div id="app">
-  <section class="hero is-info">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">Only for Production</h1>
-        <h2 class="subtitle">Selected Search Engine: {{selected_search_engine}}</h2>
-      </div>
-    </div>
-  </section>
-
+  <hero title="In Production:">Selected search engine: {{selected_search_engine}}</hero>
   <logo></logo>
 
   <section class="section">
@@ -42,12 +34,14 @@
 
 <script>
   import logo from "./components/logo.vue"
+  import hero from "./components/hero.vue"
 
   export default {
     name: 'app',
 
     components: {
-      logo
+      logo,
+      hero
     },
 
     data() {
