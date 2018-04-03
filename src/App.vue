@@ -2,7 +2,6 @@
   <div id="app">
     <logo></logo>
     <searchbar></searchbar>
-
     <!-- besser grid css oder flexbox ansehen und erst mal auf papier designen -->
     <!-- <section class="section">
       <div class="container">
@@ -51,7 +50,7 @@ export default {
     logo,
     hero,
     linkbox,
-    searchbar
+    searchbar,
   },
 }
 </script>
