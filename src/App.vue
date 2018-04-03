@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <hero title="In Production:">Selected search engine: {{selected_search_engine}}</hero>
+  <!-- <hero title="In Production:">Selected search engine: {{selected_search_engine}}</hero> -->
   <logo></logo>
 
   <section class="section">
@@ -29,7 +29,8 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <!-- besser grid css oder flexbox ansehen und erst mal auf papier designen -->
+  <!-- <section class="section">
     <div class="container">
       <div class="columns">
         <div class="column">
@@ -54,6 +55,15 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <section class="section">
+    <div class="container">
+      <linkbox title="Google Calendar" href="https://calendar.google.com/calendar/r"></linkbox>
+
+
+    </div>
+
   </section>
 </div>
 </template>
@@ -61,13 +71,15 @@
 <script>
   import logo from "./components/logo.vue"
   import hero from "./components/hero.vue"
+  import linkbox from "./components/linkbox.vue"
 
   export default {
     name: 'app',
 
     components: {
       logo,
-      hero
+      hero,
+      linkbox
     },
 
     data() {
@@ -76,5 +88,4 @@
   }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>
