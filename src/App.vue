@@ -4,31 +4,34 @@
   <logo></logo>
 
   <section class="section">
-    <div class="field has-addons">
-      <div class="control has-icons-left">
-        <span class="select">
-          <select v-model="selected_search_engine">
-            <option>google</option>
-            <option>duckduckgo</option>
-            <option>dict.cc</option>
-            <option>google images</option>
-            <option>wikipedia.de</option>
-            <option>wikipedia.com</option>
-            <option>Metal Archive</option>
-          </select>
-        </span>
-        <span class="icon is-small is-left">
-          <i class="fab fa-searchengin"></i>
-        </span>
+    <form method="get" action="http://www.google.com/search">
+      <div class="field has-addons">
+        <div class="control has-icons-left">
+          <span class="select">
+            <select v-model="selected_search_engine">
+              <option>google</option>
+              <option>duckduckgo</option>
+              <option>dict.cc</option>
+              <option>google images</option>
+              <option>wikipedia.de</option>
+              <option>wikipedia.com</option>
+              <option>Metal Archive</option>
+            </select>
+          </span>
+          <span class="icon is-small is-left">
+            <i class="fab fa-searchengin"></i>
+          </span>
+        </div>
+        <div class="control is-expanded">
+          <input class="input" type="text" placeholder="search..." name="query" maxlength="255">
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-info"><i class="fas fa-search"></i></button>
+        </div>
       </div>
-      <div class="control is-expanded">
-        <input class="input" type="text" placeholder="Find a repository">
-      </div>
-      <div class="control">
-        <a class="button is-info"><i class="fas fa-search"></i></a>
-      </div>
-    </div>
+    </form>
   </section>
+
   <!-- besser grid css oder flexbox ansehen und erst mal auf papier designen -->
   <!-- <section class="section">
     <div class="container">
@@ -56,7 +59,6 @@
       </div>
     </div>
   </section> -->
-
   <section class="section">
     <div class="container">
       <linkbox title="Google Calendar" href="https://calendar.google.com/calendar/r"></linkbox>
@@ -69,23 +71,25 @@
 </template>
 
 <script>
-  import logo from "./components/logo.vue"
-  import hero from "./components/hero.vue"
-  import linkbox from "./components/linkbox.vue"
+import logo from "./components/logo.vue"
+import hero from "./components/hero.vue"
+import linkbox from "./components/linkbox.vue"
 
-  export default {
-    name: 'app',
+export default {
+  name: 'app',
 
-    components: {
-      logo,
-      hero,
-      linkbox
-    },
+  components: {
+    logo,
+    hero,
+    linkbox
+  },
 
-    data() {
-      return {selected_search_engine: 'google'}
+  data() {
+    return {
+      selected_search_engine: 'google'
     }
   }
+}
 </script>
 
 <style lang="scss"></style>
