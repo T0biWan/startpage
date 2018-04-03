@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <hero title="In Production:">Selected search engine: {{selected_search_engine}}</hero> -->
     <logo></logo>
     <searchbar></searchbar>
 
@@ -54,12 +53,6 @@ export default {
     linkbox,
     searchbar
   },
-
-  data() {
-    return {
-      selected_search_engine: 'google'
-    }
-  }
 }
 </script>
 
