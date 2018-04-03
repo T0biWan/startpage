@@ -1,14 +1,14 @@
 <template>
-<div class="linkbox">
-  <h1 class="linkbox__title is-6">{{ title }}</h1>
-  <a v-bind:href="href">
-    <!-- <figure class="linkbox__image image is-128x128">
-      <img src="https://bulma.io/images/placeholders/128x128.png">
-    </figure> -->
-    <div class="linkbox__color"></div>
-  </a>
+  <div class="linkbox">
+    <h1 class="linkbox__title is-6">{{ title }}</h1>
+    <a v-bind:href="href">
+      <!-- <figure class="linkbox__image image is-128x128">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure> -->
+      <div class="linkbox__color"></div>
+    </a>
 
-</div>
+  </div>
 </template>
 
 <script>
