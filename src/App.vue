@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <logo></logo>
+    <logo imagepath="src\assets\logo\wave-logo-color.png"></logo>
     <searchbar></searchbar>
     <!-- besser grid css oder flexbox ansehen und erst mal auf papier designen -->
     <!-- <section class="section">
