@@ -4,13 +4,13 @@
       <div class="field has-addons">
         <div class="control has-icons-left">
           <span class="select">
-              <select v-model="selected_search_engine">
-                <option v-for="(value, key) in search_engines">{{key}}</option>
-              </select>
-            </span>
+            <select v-model="selected_search_engine">
+              <option v-for="(value, key) in search_engines">{{key}}</option>
+            </select>
+          </span>
           <span class="icon is-small is-left">
-              <i class="fab fa-searchengin"></i>
-            </span>
+            <i class="fab fa-searchengin"></i>
+          </span>
         </div>
         <div class="control is-expanded">
           <input class="input" type="text" placeholder="search..." v-bind:name="search_engine_input_name" maxlength="255">
