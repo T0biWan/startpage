@@ -27,6 +27,23 @@ npm run dev
 * Beautiful but random background image
 * hidden scrollbar in Chrome and Firefox
 
+## Configure
+
+To add a searchbar go to `src\components\searchbar.vue` and add a object to the _search_engines_.
+
+```js
+search_engines: {
+  google: {
+    action: "http://www.google.com/search",
+    name: "q"
+  },
+  duckduckgo: {
+    action: "https://duckduckgo.com/",
+    name: "q"
+  },
+}
+```
+
 ## Built With
 
 * [Vue.js](https://vuejs.org/) - The web framework used
