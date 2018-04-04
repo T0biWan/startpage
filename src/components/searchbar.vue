@@ -2,7 +2,6 @@
   <section class="section">
     <form method="get" v-bind:action="this.search_engine_action">
       <div class="field has-addons">
-        <!-- <selectbox v-bind:search_engines="this.search_engines"></selectbox> -->
         <div class="control has-icons-left">
           <span class="select">
               <select v-model="selected_search_engine">
@@ -25,14 +24,8 @@
 </template>
 
 <script>
-import selectbox from "./selectbox.vue"
-
 export default {
   name: "searchbar",
-
-  components: {
-    selectbox,
-  },
 
   data() {
     return {
