@@ -1,7 +1,7 @@
 <template>
 <section class="section">
 
-  <template v-if="selected_search_engine == 'google'">
+  <!-- <template v-if="selected_search_engine == 'google'">
       <form method="get" action="http://www.google.com/search">
         <div class="field has-addons">
           <selectbox v-bind:search_engines="this.search_engines"></selectbox>
@@ -13,9 +13,9 @@
           </div>
         </div>
       </form>
-    </template>
+    </template> -->
 
-  <template v-else-if="selected_search_engine == 'dict.cc'">
+  <!-- <template v-else-if="selected_search_engine == 'dict.cc'">
       <form method="get" action="https://dict.cc/">
         <div class="field has-addons">
           <selectbox v-bind:search_engines="this.search_engines"></selectbox>
@@ -55,22 +55,29 @@
           </div>
         </div>
       </form>
-    </template>
+    </template> -->
 
-  <template v-else-if="selected_search_engine == 'wikipedia.de'">
-      <form method="get" action="https://de.wikipedia.org/wiki/">
-        <div class="field has-addons">
-          <selectbox v-bind:search_engines="this.search_engines"></selectbox>
-          <div class="control is-expanded">
-            <input class="input" type="text" placeholder="search..." maxlength="255">
-          </div>
-          <div class="control">
-            <button type="submit" class="button is-info"><i class="fas fa-search"></i></button>
-          </div>
+    <form method="get" v-bind:action="this.search_engine_action">
+      <div class="field has-addons">
+        <!-- <selectbox v-bind:search_engines="this.search_engines"></selectbox> -->
+        <div class="control has-icons-left">
+          <span class="select">
+            <select v-model="selected_search_engine">
+              <option v-for="search_engine in search_engines">{{search_engine}}</option>
+            </select>
+          </span>
+          <span class="icon is-small is-left">
+            <i class="fab fa-searchengin"></i>
+          </span>
         </div>
-      </form>
-    </template>
-
+        <div class="control is-expanded">
+          <input class="input" type="text" placeholder="search..." v-bind:name="search_engine_input_name" maxlength="255">
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-info"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </form>
 </section>
 </template>
 
@@ -87,20 +94,48 @@ export default {
   data() {
     return {
       selected_search_engine: 'google',
+
       search_engines: [
         "google",
         "duckduckgo",
-        "dict.cc",
-        "dees.cc",
+        "dict",
+        "dees",
         // "wikipedia.de",
         // "wikipedia.com",
         // "Metal Archive"
-      ]
+      ],
+
+      search_engine_propertys: {
+        google: {
+          action: "http://www.google.com/search",
+          name: "q"
+        },
+        duckduckgo: {
+          action: "https://duckduckgo.com/",
+          name: "q"
+        },
+        dict: {
+          action: "https://dict.cc/",
+          name: "s"
+        },
+        dees: {
+          action: "https://dees.dict.cc/",
+          name: "s"
+        }
+      },
+    }
+  },
+
+  computed: {
+    search_engine_action: function () {
+      return this.search_engine_propertys[this.selected_search_engine].action
+    },
+    search_engine_input_name: function () {
+      return this.search_engine_propertys[this.selected_search_engine].name
     }
   }
 }
 </script>
 
 <style lang="scss">
-@import 'node_modules/sass-material-design-colors/palette.scss';
 </style>
