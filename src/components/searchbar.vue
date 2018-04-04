@@ -4,7 +4,7 @@
   <template v-if="selected_search_engine == 'google'">
       <form method="get" action="http://www.google.com/search">
         <div class="field has-addons">
-          <selectbox v-bind:search_engines=this.search_engines></selectbox>
+          <selectbox v-bind:search_engines="this.search_engines"></selectbox>
           <div class="control is-expanded">
             <input class="input" type="text" placeholder="search..." name="q" maxlength="255">
           </div>
@@ -18,7 +18,7 @@
   <template v-else-if="selected_search_engine == 'dict.cc'">
       <form method="get" action="https://dict.cc/">
         <div class="field has-addons">
-          <selectbox v-bind:search_engines=this.search_engines></selectbox>
+          <selectbox v-bind:search_engines="this.search_engines"></selectbox>
           <div class="control is-expanded">
             <input class="input" type="text" placeholder="search..." name="s" maxlength="255">
           </div>
@@ -32,7 +32,7 @@
   <template v-else-if="selected_search_engine == 'dees.cc'">
       <form method="get" action="https://dees.dict.cc/">
         <div class="field has-addons">
-          <selectbox v-bind:search_engines=this.search_engines></selectbox>
+          <selectbox v-bind:search_engines="this.search_engines"></selectbox>
           <div class="control is-expanded">
             <input class="input" type="text" placeholder="search..." name="s" maxlength="255">
           </div>
@@ -46,7 +46,7 @@
   <template v-else-if="selected_search_engine == 'duckduckgo'">
       <form method="get" action="https://duckduckgo.com/">
         <div class="field has-addons">
-          <selectbox v-bind:search_engines=this.search_engines></selectbox>
+          <selectbox v-bind:search_engines="this.search_engines"></selectbox>
           <div class="control is-expanded">
             <input class="input" type="text" placeholder="search..." name="q" maxlength="255">
           </div>
@@ -60,7 +60,7 @@
   <template v-else-if="selected_search_engine == 'wikipedia.de'">
       <form method="get" action="https://de.wikipedia.org/wiki/">
         <div class="field has-addons">
-          <selectbox v-bind:search_engines=this.search_engines></selectbox>
+          <selectbox v-bind:search_engines="this.search_engines"></selectbox>
           <div class="control is-expanded">
             <input class="input" type="text" placeholder="search..." maxlength="255">
           </div>
