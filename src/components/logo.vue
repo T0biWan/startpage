@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section logo__container">
     <figure class="container image is-128x128">
       <img v-bind:src="imagepath">
     </figure>
@@ -19,5 +19,9 @@ export default {
 <style lang="scss">
 img {
   opacity: 1.0;
+}
+
+.logo__container {
+  margin-top: 50px;
 }
 </style>
