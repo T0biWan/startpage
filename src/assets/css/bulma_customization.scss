@@ -1,4 +1,7 @@
 @import '../../../node_modules/bulma/sass/utilities/initial-variables';
 @import '../../../node_modules/bulma/sass/utilities/functions';
+@import '../../../node_modules/sass-material-design-colors/palette.scss';
+
+$primary: $light-blue-500;
 
 @import '../../../node_modules/bulma/bulma';
