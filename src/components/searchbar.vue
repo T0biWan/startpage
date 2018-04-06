@@ -1,6 +1,4 @@
 <template>
-  <section class="section">
-    <div class="container">
       <form method="get" v-bind:action="this.search_engine_action">
         <div class="field has-addons">
           <div class="control has-icons-left">
@@ -17,12 +15,10 @@
             <input class="input" type="text" placeholder="search..." v-bind:name="search_engine_input_name" maxlength="255">
           </div>
           <div class="control">
-            <button type="submit" class="button is-info"><i class="fas fa-search"></i></button>
+            <button type="submit" class="button is-primary"><i class="fas fa-search"></i></button>
           </div>
         </div>
       </form>
-    </div>
-  </section>
 </template>
 
 <script>
