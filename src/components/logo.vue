@@ -1,7 +1,8 @@
 <template>
   <section class="section logo__container">
     <figure class="container image is-128x128">
-      <img v-bind:src="imagepath">
+      <a href="https://github.com/T0biWan" target="_blank"><img v-bind:src="imagepath"></a>
+
     </figure>
   </section>
 </template>
