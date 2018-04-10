@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <div class="container">
-    <logo imagepath="src\assets\logo\wave-logo-color.png"></logo>
+    <logo imagepath="src/assets/img/wave-logo-color.png"></logo>
     <searchbar></searchbar>
     <hyperlinks></hyperlinks>
   </div>
