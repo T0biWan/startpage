@@ -1,0 +1,44 @@
+{
+  "hyperlinks": [
+    {
+      "title": "Calendar",
+      "href": "https://calendar.google.com/calendar/r",
+      "symbol": "src/assets/img/hope-house-press-127593-unsplash.jpg"
+    },
+    {
+      "title": "Contacts",
+      "href": "https://contacts.google.com/",
+      "symbol": "src/assets/img/nik-macmillan-309702-unsplash.jpg"
+    },
+    {
+      "title": "YouTube",
+      "href": "https://www.youtube.com",
+      "symbol": "src/assets/img/ariel-domenden-583207-unsplash.jpg"
+    },
+    {
+      "title": "imgur",
+      "href": "https://imgur.com/",
+      "symbol": "src/assets/img/brooke-lark-609907-unsplash.jpg"
+    },
+    {
+      "title": "Disroot",
+      "href": "https://apps.disroot.org/",
+      "symbol": "src/assets/img/oscar-nord-588057-unsplash.jpg"
+    },
+    {
+      "title": "Picdumps",
+      "href": "http://www.picdumps.com/",
+      "symbol": "src/assets/img/simon-abrams-286276-unsplash.jpg"
+    },
+    {
+      "title": "RegEx",
+      "href": "https://regex101.com/",
+      "symbol": "src/assets/img/chris-ried-532181-unsplash.jpg"
+    },
+    {
+      "title": "JSON",
+      "href": "https://jsoneditoronline.org/",
+      "symbol": "src/assets/img/andrew-neel-218073-unsplash.jpg"
+    }
+  ]
+}
