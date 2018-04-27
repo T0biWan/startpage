@@ -1,5 +1,5 @@
 <template>
-  <a v-bind:href="href" target="_blank">
+  <a v-bind:href="href">
     <div class="banner__container hyperlink-container">
       <template v-if="image"><img class="hyperlink-content__filler" v-bind:src="image"></template>
       <template v-else><div class="hyperlink-content__filler random-color"></div></template>
