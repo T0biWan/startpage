@@ -30,7 +30,7 @@ export default {
         { title: 'maps', link: 'https://www.google.com/maps/', category: '', icon: '' },
         { title: 'maps timeline', link: 'https://www.google.com/maps/timeline', category: '', icon: '' },
         { title: 'notes', link: 'https://github.com/T0biWan/notes-cms', category: '', icon: '' },
-        { title: 'disroot', link: 'https://apps.disroot.org/', category: '', icon: '' }
+        { title: 'disroot', link: 'https://apps.disroot.org/', category: '', icon: '' },
         { title: 'tasks', link: 'https://trello.com/b/SKPdrjlw/task-force', category: '', icon: '' }
       ]
     }
