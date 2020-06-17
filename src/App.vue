@@ -30,13 +30,17 @@ export default {
         { title: 'contacts', link: 'https://contacts.google.com/', category: 'office', icon: '' },
         { title: 'disroot', link: 'https://apps.disroot.org/', category: 'office', icon: '' },
         { title: 'udemy', link: 'https://www.udemy.com/home/my-courses/learning/', category: 'education', icon: '' },
-        { title: 'maps', link: 'https://www.google.com/maps/', category: 'service', icon: '' },
-        { title: 'maps timeline', link: 'https://www.google.com/maps/timeline', category: 'service', icon: '' },
+        { title: 'kurse', link: 'https://trello.com/b/3G1kdMWc/lernen', category: 'education', icon: '' },
+        { title: 'maps', link: 'https://www.google.com/maps/', category: 'services', icon: '' },
+        { title: 'maps timeline', link: 'https://www.google.com/maps/timeline', category: 'services', icon: '' },
+        { title: 'windfinder', link: 'https://de.windfinder.com/weatherforecast/tempelhof', category: 'services', icon: '' },
+        { title: 'wetter', link: 'https://www.google.com/search?client=firefox-b-d&q=wetter+berlin', category: 'services', icon: '' },
         { title: 'youtube', link: 'https://www.youtube.com/', category: 'entertainment', icon: '' },
         { title: 'netflix', link: 'https://www.netflix.com/browse', category: 'entertainment', icon: '' },
         { title: 'prime', link: 'https://www.amazon.de/gp/video/storefront/', category: 'entertainment', icon: '' },
         { title: 'imgur', link: 'https://imgur.com/t/meme%20dump', category: 'entertainment', icon: '' },
-        { title: 'picdumbs', link: 'https://www.picdumps.com/', category: 'entertainment', icon: '' }
+        { title: 'picdumbs', link: 'https://www.picdumps.com/', category: 'entertainment', icon: '' },
+        { title: 'fotos', link: 'https://photos.google.com/', category: 'services', icon: '' }
       ]
     }
   },
